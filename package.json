@@ -1,7 +1,19 @@
 {
   "name": "hardhat-project",
+  "type": "module",
+  "scripts": {
+    "node": "node src/time-lock-listener.js"
+  },
   "devDependencies": {
+    "@lit-protocol/lit-node-client-nodejs": "^3.0.27",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "hardhat": "^2.19.4"
+    "@spruceid/siwe-parser": "^2.0.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.1",
+    "hardhat": "^2.19.4",
+    "siwe": "^2.1.4"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
   }
 }
