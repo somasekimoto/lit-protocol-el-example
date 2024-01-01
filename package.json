@@ -2,7 +2,10 @@
   "name": "hardhat-project",
   "type": "module",
   "scripts": {
-    "node": "node src/time-lock-listener.js"
+    "node": "node src/time-lock-listener.js",
+    "node:approveNft": "node src/approveNft.js",
+    "node:rent": "node src/rent.js",
+    "node:listener": "node src/litListener.js"
   },
   "devDependencies": {
     "@lit-protocol/lit-node-client-nodejs": "^3.0.27",
@@ -11,9 +14,13 @@
     "dotenv": "^16.3.1",
     "ethers": "^6.9.1",
     "hardhat": "^2.19.4",
-    "siwe": "^2.1.4"
+    "lit-listener-sdk": "^1.0.25",
+    "siwe": "^2.1.4",
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
+    "@ethersproject/transactions": "^5.7.0",
+    "@openzeppelin/contracts": "^5.0.1",
     "typescript": "^5.3.3"
   }
 }
